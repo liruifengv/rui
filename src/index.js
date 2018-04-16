@@ -1,7 +1,9 @@
 import Hello from '../packages/Hello'
+import Button from '../packages/button'
 
 const components = [
-  Hello
+  Hello,
+  Button
 ]
 
 const install = function (Vue) {
