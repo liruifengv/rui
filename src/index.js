@@ -1,11 +1,13 @@
 import Hello from '../packages/Hello'
 import Button from '../packages/button'
 import Input from '../packages/input'
+import Message from '../packages/message/message.js'
 
 const components = [
   Hello,
   Button,
-  Input
+  Input,
+  Message
 ]
 
 const install = function (Vue) {
@@ -14,6 +16,8 @@ const install = function (Vue) {
   components.map(component => {
     Vue.component(component.name, component)
   })
+
+  Vue.prototype.$message = Message
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
