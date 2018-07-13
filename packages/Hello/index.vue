@@ -1,6 +1,6 @@
 <template>
   <div class="r-hello">
-    hello {{ message }}
+    <p>hello {{ message }}</p>
   </div>
 </template>
 
