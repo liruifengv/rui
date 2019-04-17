@@ -1,7 +1,8 @@
 module.exports = {
     title: 'RUI', // 设置网站标题
     description: 'a vue component library', //描述
-    dest: './dist', // 设置输出目录
+    base: '/rui/',
+    dest: './examples/.vuepress/dist', // 设置输出目录
     port: 8080, //端口
     themeConfig: { //主题配置
         // 添加导航栏
