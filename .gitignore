@@ -2,19 +2,16 @@
 node_modules/
 /dist/
 /lib/
-/examples/dist/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/examples/.vuepress/dist/
+/examples1/
+npm - debug.log * 
+yarn - debug.log * 
+yarn - error.log * 
 /test/unit/coverage/
 /test/e2e/reports/
-selenium-debug.log
+selenium - debug.log
 /packages/Hello/
 
 # Editor directories and files
 .idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+.vscode * .suo * .ntvs *  * .njsproj * .sln
