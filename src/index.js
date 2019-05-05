@@ -3,7 +3,6 @@ import Button from '../packages/button'
 import Input from '../packages/input'
 import Icon from '../packages/icon'
 import Message from '../packages/message/message.js'
-import '../font/iconfont';
 const components = [
   Hello,
   Button,
@@ -24,6 +23,9 @@ const install = function (Vue) {
 
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
+  import('../font/iconfont').then(module => {
+    // use code
+  })
 }
 
 export default {
