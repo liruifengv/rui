@@ -32,7 +32,8 @@ module.exports = {
           title: '组件',
           collapsable: false,
           children: [
-            'components/Button'
+            'components/Button',
+            'components/Message',
           ]
         }
       ]
