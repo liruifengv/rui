@@ -1,9 +1,8 @@
 <template>
   <div class="btn-box">
-    <r-button>默认按钮</r-button>
-    <r-button type='primary'>主按钮</r-button>
-    <r-button type='danger'>危险按钮</r-button>
-    <r-button type='dashed'>虚线按钮</r-button>
+    <r-button :disabled='true'>禁用按钮</r-button>
+    <r-button size='medium' :disabled='true'>禁用按钮</r-button>
+    <r-button size='small' :disabled='true'>禁用按钮</r-button>
   </div>
 </template>
 
