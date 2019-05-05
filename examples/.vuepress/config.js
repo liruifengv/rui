@@ -34,6 +34,8 @@ module.exports = {
           children: [
             'components/Button',
             'components/Message',
+            'components/Input',
+            'components/Icon',
           ]
         }
       ]

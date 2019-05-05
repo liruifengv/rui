@@ -131,6 +131,7 @@
     display: flex;
     align-items: center;
     z-index: 9999;
+
   }
 
   .r-message p {
@@ -176,6 +177,7 @@
     line-height: 1;
     font-size: 14px;
     padding-left: 20px;
+    color: rgba(0, 0, 0, .65)
   }
 
   .r-message-fade-enter,
