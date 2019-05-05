@@ -1,13 +1,15 @@
 import Hello from '../packages/Hello'
 import Button from '../packages/button'
 import Input from '../packages/input'
+import Icon from '../packages/icon'
 import Message from '../packages/message/message.js'
-
+import '../font/iconfont';
 const components = [
   Hello,
   Button,
   Input,
-  Message
+  Message,
+  Icon
 ]
 
 const install = function (Vue) {
