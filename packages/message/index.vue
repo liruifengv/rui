@@ -5,7 +5,7 @@
         type? `r-message--${ type }` : '',
         center ? 'is-center' : ''
         ]" v-show="visible" @mouseenter="clearTimer" @mouseleave="startTimer" role="alert">
-      <r-icon :name="iconType" :color= "iconColor" size='18px' class="r-message__icon"/>
+      <r-icon :name="iconType" :color="iconColor" size='18px' class="r-message__icon" />
       <slot>
         <p class="r-message__content">{{message}}</p>
       </slot>
@@ -40,7 +40,7 @@
     },
     computed: {
       iconType() {
-        switch(this.type) {
+        switch (this.type) {
           case 'info':
             return 'info-circle-fill';
           case 'success':
@@ -51,8 +51,8 @@
             return 'warning-circle-fill';
         }
       },
-        iconColor() {
-        switch(this.type) {
+      iconColor() {
+        switch (this.type) {
           case 'info':
             return '#108ee9';
           case 'success':
@@ -123,7 +123,6 @@
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
-    /* background-color: #edf2fc; */
     background-color: #fff;
     transition: all .3s;
     overflow: hidden;
@@ -131,37 +130,12 @@
     display: flex;
     align-items: center;
     z-index: 9999;
-
+    background: #fff;
+    border-color: #fff;
   }
 
   .r-message p {
     margin: 0;
-  }
-
-  .r-message--success {
-    /* background: #f0f9eb;
-    border-color: #e1f3d8;
-    color: #67c23a */
-
-        background: #fff;
-    border-color: #fff;
-  }
-
-  .r-message--error {
-    /* background: #ff0000;
-    border-color: #ff0000;
-    color: #fff; */
-
-            background: #fff;
-    border-color: #fff;
-  }
-
-  .r-message--warning {
-    /* background: #108ee9;
-    border-color: #108ee9;
-    color: #fff; */
-                background: #fff;
-    border-color: #fff;
   }
 
   .r-message__closeBtn {
@@ -185,10 +159,12 @@
     opacity: 0;
     transform: translate(-50%, -100%);
   }
+
   .r-message__icon {
     position: absolute;
     left: 10px;
   }
+
   /* .is-center .r-message__icon {
     position: relative;
   } */

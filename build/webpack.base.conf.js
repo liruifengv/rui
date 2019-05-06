@@ -63,7 +63,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('src'), resolve('packages'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -130,20 +130,6 @@ module.exports = {
     }
   },
   // 整合webpack.dev.conf.js中的plugins选项
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': require('../config/dev.env')
-    }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    // 页面主入口
-    new HtmlWebpackPlugin({
-      chunks: ['manifest', 'vendor', 'rui'],
-      template: 'examples/src/index.tpl',
-      filename: 'index.html',
-      inject: true
-    })
-  ]
+  plugins: []
 
 }
