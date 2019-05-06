@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{188:function(n,t,e){"use strict";e.r(t);var s={name:"message",methods:{onClick1:function(){this.$message("这是一条提示消息")}}},i=e(0),c=Object(i.a)(s,function(){var n=this.$createElement,t=this._self._c||n;return t("div",[t("r-button",{on:{click:this.onClick1}},[this._v("提示")])],1)},[],!1,null,null,null);t.default=c.exports}}]);
