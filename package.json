@@ -1,9 +1,30 @@
 {
-    "name": "rui",
+    "name": "rui-component",
     "version": "1.0.0",
     "description": "a vue component library",
-    "author": "liruifeng <li15227870916@gmail.com>",
-    "private": true,
+    "author": "liruifengv <li15227870916@gmail.com>",
+    "main": "lib/rui.js",
+    "files": [
+      "lib",
+      "src",
+      "packages"
+    ],
+    "private": false,
+    "keywords": [
+        "Vue",
+        "component",
+        "rui"
+    ],
+    "bugs": {
+        "url": "https://github.com/liruifengv/rui/issues",
+        "email": "ruifengli@joyogame.com"
+    },
+    "license": "MIT",
+    "homepage": "https://liruifengv.github.io/rui/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/liruifengv/rui"
+    },
     "scripts": {
         "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
         "start": "vuepress dev examples",
@@ -12,7 +33,7 @@
         "test": "npm run unit",
         "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
         "build": "vuepress build examples",
-        "build:rui": "webpack --progress --hide-modules --config build/webpack.build.js && rimraf examples/dist && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.build.min.js",
+        "build:rui": "webpack --progress --hide-modules --config build/webpack.build.js",
         "examples:dev": "vuepress dev examples",
         "examples:build": "vuepress build examples"
     },

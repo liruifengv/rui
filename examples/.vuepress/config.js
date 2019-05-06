@@ -40,7 +40,6 @@ module.exports = {
         }
       ]
     },
-    sidebarDepth: 1,
-    lastUpdated: 'Last Updated', // string | boolean
+    sidebarDepth: 1
   }
 }
